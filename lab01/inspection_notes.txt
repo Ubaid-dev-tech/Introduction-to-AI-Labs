@@ -1,0 +1,1 @@
+Titanic inspection verified: 891 rows x 15 columns.
