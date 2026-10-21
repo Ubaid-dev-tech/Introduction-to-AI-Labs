@@ -1,1 +1,2 @@
 Exercise 1: Verified Python 3.11 (ai-lab) kernel registration.
+Exercise 3: Computed coefficient of variation (std/mean) across numeric features.
