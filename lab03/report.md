@@ -2,7 +2,6 @@
 
 **Course:** Introduction to Artificial Intelligence (AI-101L)  
 **Instructor:** Dr. Muhammad Awais  
-**Lab Block:** Phase A - Environment and Data (CLO-2)  
 
 ## 1. Overview of What I Did in This Lab
 
