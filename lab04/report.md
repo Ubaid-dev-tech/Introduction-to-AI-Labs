@@ -73,3 +73,23 @@ For all three tasks, the data was split into `80%` training data and `20%` testi
   * **True Positives (Actual 1, Predicted 1):** `37`
 * **ROC AUC Score (`figures/diabetes_roc_curve.png`):** **`0.8290`**
 * **Sample Patient Test (`[21, 35.7, 75.0, 102.5, 112, 0.148]`):** Predicted class is **`0` (Non-Diabetic)** with a predicted diabetes probability of **`0.1479` (`14.8%`)**.
+
+## 5. Lecture Slide Exercise Solutions (`Regression Linear vs Logistic.pptx`)
+
+### Slide 2: Simple Linear Regression ($Y = mx + c$)
+* **Slope ($m$):** `9423.81532303`
+* **Intercept ($c$):** `24380.201479473726`
+
+| Input ($x$) | Formula ($Y = mx + c$) | Output ($y$) |
+| ---: | :--- | ---: |
+| `9.7` | `9423.81532303 * 9.7 + 24380.201479473726` | **`115,791.21`** |
+| `5.0` | `9423.81532303 * 5.0 + 24380.201479473726` | **`71,499.28`** |
+
+### Slide 3: Multi Linear Regression ($Y = m_1 x_1 + m_2 x_2 + m_3 x_3 + m_4 x_4 + m_5 x_5 + m_6 x_6 + m_7 x_7 + c$)
+* **Coefficients ($m_1 \dots m_7$):** `[199.5132451, 10225.20442601, 8208.43477213, 993.53717098, 14885.38441545, 5146.14838675, 115.06859497]`
+* **Intercept ($c$):** `-2010567.4201016556`
+
+| Input Vector $[x_1, x_2, x_3, x_4, x_5, x_6, x_7]$ | Output ($y$) |
+| :--- | ---: |
+| `[4012, 3, 1, 2016, 2.098092, 1, 5]` | **`868,687.10`** |
+| `[2310, 3, 1, 1988, 1.369622, 1, 4]` | **`490,337.89`** |

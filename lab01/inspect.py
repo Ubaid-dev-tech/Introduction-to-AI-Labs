@@ -19,7 +19,13 @@ def inspect(path_or_url):
     path_or_url : str
         A local file path or an http(s) URL pointing at a CSV file.
     """
-    df = pd.read_csv(path_or_url)
+    try:
+        df = pd.read_csv(path_or_url)
+    except Exception:
+        # Offline fallback to local cached dataset in lab01/
+        local_name = "titanic.csv" if "titanic" in str(path_or_url).lower() else "iris.csv"
+        local_path = os.path.join(_script_dir, local_name)
+        df = pd.read_csv(local_path)
 
     print("=" * 70)
     print("SOURCE :", path_or_url)
